@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <div class="container mt-4">
+        <h1 class="display-6 text-center">Portfolio</h1>
+        <div class="table-responsive mt-3">
+            <table class="table table-hover shadow-sm">
+                <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Symbol</th>
+                        <th scope="col">Shares</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for holding in holdings %}
+                    <tr>
+                        <td>{{ holding.symbol }}</td>
+                        <td>{{ holding.shares }}</td>
+                        <td>{{ holding.price | usd }}</td>
+                        <td>{{ holding.total | usd }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="text-center mt-4">
+            <h5>Cash: <span class="text-success">{{ cash | usd }}</span></h5>
+            <h5>Grand Total: <span class="text-primary">{{ grand_total | usd }}</span></h5>
+        </div>
+    </div>
+{% endblock %}
+

@@ -1,0 +1,256 @@
+/* Import custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+/* General typography */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f4f7f6;
+    padding-bottom: 50px; /* Adds some space before the footer */
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333;
+}
+
+h1.display-6 {
+    font-size: 1.75rem; /* Tamaño reducido para el título principal */
+}
+
+/* Paragraphs and other text */
+p {
+    margin-bottom: 1.5rem;
+}
+
+/* Size and font for brand */
+nav .navbar-brand {
+    font-size: 2rem; /* Ajustado a rem para mejor escalado */
+    font-family: 'Montserrat', sans-serif; /* Añadiendo una fuente personalizada */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue {
+    color: #537fbe;
+}
+nav .navbar-brand .red {
+    color: #ea433b;
+}
+nav .navbar-brand .yellow {
+    color: #f5b82e;
+}
+nav .navbar-brand .green {
+    color: #2e944b;
+}
+
+/* Hover effects for brand */
+nav .navbar-brand:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Background and text color for nav */
+nav {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e2e2e2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-link {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for navigation links */
+nav .nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* General button styles */
+.btn-primary {
+    background: linear-gradient(135deg, #6a89cc, #4a69bd);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem; /* Tamaño de botón ajustado */
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn-primary:hover {
+    background: linear-gradient(135deg, #4a69bd, #6a89cc);
+    transform: translateY(-2px);
+}
+
+/* Additional button styles for secondary actions */
+.btn-secondary {
+    background: linear-gradient(135deg, #e2e2e2, #c9c9c9);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #c9c9c9, #e2e2e2);
+    transform: translateY(-2px);
+}
+
+/* Form styles */
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+.table {
+    margin-top: 20px;
+    background-color: #fff;
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th, .table td {
+    padding: 15px;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: left;
+    font-size: 0.875rem; /* Tamaño de texto reducido */
+}
+
+.table thead th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Custom styling for the summary section */
+.text-center h5 {
+    font-size: 1.25rem; /* Tamaño reducido para el resumen */
+    font-weight: 600;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+/* Adjust the footer to make it look nicer */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e2e2e2;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+footer p, footer a {
+    color: #555;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #333;
+}
+
+.custom-footer {
+    background-color: #007bff; /* Fondo azul */
+    padding: 15px 0;           /* Espaciado dentro del pie de página */
+    color: #FFFFFF !important; /* Blanco puro, forzado */
+    position: fixed;           /* Para mantener el pie de página en la parte inferior */
+    width: 100%;               /* Asegura que cubra todo el ancho */
+    bottom: 0;                 /* Anclar el pie de página a la parte inferior de la ventana */
+    z-index: 1000;             /* Asegura que el pie de página esté siempre al frente */
+    opacity: 1;                /* Asegura que no haya opacidad */
+}
+
+.custom-footer p {
+    margin: 0;                 /* Quita el margen para centrar el texto */
+    font-size: 0.875rem;       /* Tamaño de la fuente */
+    color: #FFFFFF !important; /* Asegúrate de que el texto también sea blanco puro */
+    opacity: 1;                /* Asegura que no haya opacidad */
+}
+
+/* Card styles for displaying stock information */
+.card {
+    background-color: #f8f9fa;
+    border: none;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h2, .card-body p {
+    margin: 10px 0;
+}
+
+/* Adjusted text size in cards */
+.card-body h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.card-body p span {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Button in card */
+.card-body .btn-primary {
+    margin-top: 15px;
+    background: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+}
+
+.card-body .btn-primary:hover {
+    background: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Asegurar que el botón se vea bien junto al título */
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-danger {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+

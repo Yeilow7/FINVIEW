@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <h1 class="display-4">{{ companyName }} ({{ symbol }})</h1>
+    <div class="card mx-auto shadow" style="max-width: 600px; border-radius: 10px;">
+        <div class="card-body">
+            <h2 class="card-title text-primary mb-4">Current Price: {{ price | usd }}</h2>
+            <p class="card-text">
+                <strong>Change YTD:</strong> <span class="{{ 'text-success' if change > 0 else 'text-danger' }}">{{ change | usd }} ({{ changePercent }}%)</span>
+            </p>
+            <p class="card-text">
+                <strong>52 Week High:</strong> <span class="text-success">{{ week52High | usd }}</span>
+            </p>
+            <p class="card-text">
+                <strong>52 Week Low:</strong> <span class="text-danger">{{ week52Low | usd }}</span>
+            </p>
+            <p class="card-text">
+                <strong>P/E Ratio:</strong> <span class="text-primary">{{ peRatio }}</span>
+            </p>
+            <p class="card-text">
+                <strong>Market Cap:</strong> <span class="text-primary">{{ marketCap | usd }}</span>
+            </p>
+            <a href="/" class="btn btn-primary mt-4">Go Back</a>
+        </div>
+    </div>
+{% endblock %}
