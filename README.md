@@ -52,4 +52,5 @@ Contributions are welcome! If you would like to contribute, please fork the repo
 ## How to View the Page
 
 The website is hosted on GitHub Pages and can be visited at the following URL:
+https://yeilow7.github.io/FINVIEW/
 
