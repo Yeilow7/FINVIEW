@@ -1,6 +1,6 @@
 # FINVIEW - Personal Finances
 
-/financial-view.png
+![Financial-View Preview](financial-view.png)
 
 ## Project Description
 
