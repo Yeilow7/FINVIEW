@@ -6,6 +6,8 @@
 
 FINVIEW is a web application that simulates a simple stock trading platform. Users can register, log in, and manage their virtual portfolios by buying and selling stocks. The application interacts with the Yahoo Finance API to retrieve real-time stock data, allowing users to see current stock prices and track their investments.
 
+You may encounter error with yahoo finance data extraction updates.
+
 ## Features
 
 - **User Registration and Login:** Users can create an account, log in, and manage their portfolio.
