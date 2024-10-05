@@ -1,6 +1,6 @@
 # FINVIEW - Personal Finances
 
-financial-view.png
+/financial-view.png
 
 ## Project Description
 
